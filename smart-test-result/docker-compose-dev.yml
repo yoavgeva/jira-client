@@ -1,0 +1,81 @@
+version: '3'
+
+services:
+  smart-test-result:
+    depends_on:
+      - elasticsearch
+      - discovery
+    container_name: str-server
+    build: server
+    ports:
+      - "8080:8080" # Mapping the internal container ports to the external ones.
+      - "8000:8000"
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      spring.cloud.consul.host: discovery
+    networks:
+      - elastic
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -jar smart-test-result.jar
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:7.8.0
+    container_name: elasticsearch
+    ports:
+      - 9200:9200
+      - 9300:9300
+    environment:
+      - discovery.type=single-node
+    volumes:
+      - ~/elasticsearch/data:/usr/share/elasticsearch/data
+    networks:
+      - elastic
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:7.8.0
+    container_name: kibana
+    ports:
+      - "5601:5601"
+    environment:
+      ELASTICSEARCH_URL: http://elasticsearch:9200
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+    networks:
+      - elastic
+
+
+  discovery:
+    image: consul:1.8.2
+    container_name: discovery
+    volumes:
+          - ./data/consul:/consul/data
+    ports:
+          - "8500:8500"
+        #        - "8300:8300"
+        #        - "53:8600/udp"
+    command: "agent -server -bootstrap-expect=1 -ui -client 0.0.0.0"
+    environment:
+          - 'CONSUL_LOCAL_CONFIG={"leave_on_terminate": true}'
+    restart: always
+
+    networks:
+      - elastic
+  jira-bts:
+    depends_on:
+      - discovery
+    container_name: jira
+    build: jira-bts-server
+    ports:
+      - "8082:8082" # Mapping the internal container ports to the external ones.
+      - "8001:8001"
+    environment:
+      JIRA_URL: http://jira.datorama.net/
+      JIRA_USER: qa_automation
+      JIRA_PASSWORD: ohzujoo8Roochej2ziuviavai1aino
+      spring.cloud.consul.host: discovery
+    networks:
+      - elastic
+    command: java -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:8000 -jar smart-test-result.jar
+
+
+networks:
+  elastic:
+    driver: bridge

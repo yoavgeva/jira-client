@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <name>smart-test-result-client</name>
+    <groupId>com.datorama.str</groupId>
+    <artifactId>client</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>com.datorama.str</groupId>
+        <artifactId>smart-test-result</artifactId>
+        <version>1.0</version>
+    </parent>
+
+   <dependencies>
+       <dependency>
+           <groupId>com.datorama.str</groupId>
+           <artifactId>common</artifactId>
+           <version>0.0.1-SNAPSHOT</version>
+       </dependency>
+       <dependency>
+           <groupId>com.squareup.okhttp3</groupId>
+           <artifactId>logging-interceptor</artifactId>
+           <version>4.7.2</version>
+       </dependency>
+       <dependency>
+           <groupId>com.squareup.retrofit2</groupId>
+           <artifactId>retrofit</artifactId>
+           <version>2.9.0</version>
+           <exclusions>
+               <exclusion>
+                   <artifactId>okhttp</artifactId>
+                   <groupId>com.squareup.okhttp3</groupId>
+               </exclusion>
+           </exclusions>
+       </dependency>
+       <dependency>
+           <groupId>com.squareup.retrofit2</groupId>
+           <artifactId>converter-jackson</artifactId>
+           <version>2.9.0</version>
+       </dependency>
+   </dependencies>
+
+
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.datorama.str</groupId>
+        <artifactId>smart-test-result</artifactId>
+        <version>1.0</version>
+    </parent>
+
+    <groupId>com.datorama.str</groupId>
+    <artifactId>reportportal-adapter</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>smart-test-result-reportportal-adapter</name>
+
+   <dependencies>
+       <dependency>
+           <groupId>com.datorama.str</groupId>
+           <artifactId>client</artifactId>
+           <version>0.0.1-SNAPSHOT</version>
+       </dependency>
+       <!-- ReportPortal dependencies -->
+       <dependency>
+           <groupId>com.epam.reportportal</groupId>
+           <artifactId>commons-model</artifactId>
+           <version>4.2.0</version>    <!-- current version until we update ReportPortal -->
+       </dependency>
+       <dependency>
+           <groupId>junit</groupId>
+           <artifactId>junit</artifactId>
+           <version>4.13</version>
+           <scope>test</scope>
+       </dependency>
+   </dependencies>
+
+    <repositories>
+        <repository>
+            <id>bintray</id>
+            <url>http://dl.bintray.com/epam/reportportal</url>
+        </repository>
+    </repositories>
+</project>
