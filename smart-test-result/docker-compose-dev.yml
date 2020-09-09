@@ -67,7 +67,7 @@ services:
       - "8082:8082" # Mapping the internal container ports to the external ones.
       - "8001:8001"
     environment:
-      JIRA_URL: http://jira.datorama.net/
+      JIRA_URL: https://jira.datorama.net/
       JIRA_USER: qa_automation
       JIRA_PASSWORD: ohzujoo8Roochej2ziuviavai1aino
       spring.cloud.consul.host: discovery
