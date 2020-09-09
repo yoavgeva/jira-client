@@ -98,26 +98,11 @@
         </dependency>
 
         <!-- jira rest client -->
-<!--        <dependency>-->
-<!--            <groupId>com.atlassian.fugue</groupId>-->
-<!--            <artifactId>fugue</artifactId>-->
-<!--            <version>2.6.2</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>com.atlassian.jira</groupId>-->
-<!--            <artifactId>jira-rest-java-client-app</artifactId>-->
-<!--            <version>5.2.0</version>-->
-<!--        </dependency>-->
-<!--        <dependency>-->
-<!--            <groupId>net.sf.json-lib</groupId>-->
-<!--            <artifactId>json-lib</artifactId>-->
-<!--            <version>2.4.2-geoserver</version>-->
-<!--        </dependency>-->
 
         <dependency>
             <groupId>net.rcarz</groupId>
             <artifactId>jira-client-test</artifactId>
-            <version>0.7-SNAPSHOT</version>
+            <version>0.9-SNAPSHOT</version>
         </dependency>
     </dependencies>
     <profiles>
