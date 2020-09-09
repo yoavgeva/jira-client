@@ -1,0 +1,163 @@
+{
+	"fields":[
+		{"jira_name_key":"created",
+		"datorama_name_key":"creationDate",
+		"type_value":"java.util.Date"	
+		
+	},{"jira_name_key":"updated",
+		"datorama_name_key":"updatedDate",
+		"type_value":"java.util.Date"	
+		
+	},
+	{"jira_name_key":"resolutiondate",
+		"datorama_name_key":"resolvedDate",
+		"type_value":"java.util.Date"	
+		
+	},
+	{"jira_name_key":"duedate",
+		"datorama_name_key":"dueDate",
+		"type_value":"java.util.Date"	
+		
+	},
+	{"jira_name_key":"customfield_11504",
+		"datorama_name_key":"productModule",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"index_value":"0",
+		"type_value":"java.lang.String"
+	},
+	{"jira_name_key":"priority",
+		"datorama_name_key":"priority",
+		"class_name_value":"net.rcarz.jiraclient.Priority",
+		"method_name_value":"getName",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_11700",
+		"datorama_name_key":"isNewPlatform",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_13401",
+		"datorama_name_key":"isNewDashboards",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"index_value":"0",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_13300",
+		"datorama_name_key":"bugSeverity",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_11200",
+		"datorama_name_key":"bugClassification",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+
+	{"jira_name_key":"customfield_11200",
+		"datorama_name_key":"bugClassification",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+
+	{"jira_name_key":"customfield_13400",
+		"datorama_name_key":"squad",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_10007",
+		"datorama_name_key":"sprint",
+		"class_name_value":"com.datorama.connector.jira.models.jira.Sprint",
+		"method_name_value":"getSprint",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_10200",
+		"datorama_name_key":"epicLink",
+		"method_name_value":"toString",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_12601",
+		"datorama_name_key":"defectCausedByPreviousVersion",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_10500",
+		"datorama_name_key":"freshdeskTickets",
+		"method_name_value":"toString",
+		"type_value":"java.lang.String"
+	},
+	{"jira_name_key":"customfield_12200",
+		"datorama_name_key":"widgetType",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"index_value":"0",
+		"type_value":"java.lang.String"
+	},
+	{"jira_name_key":"customfield_10800",
+		"datorama_name_key":"assignedQa",
+		"class_name_value":"org.apache.commons.collections.map.ListOrderedMap",
+		"index_value":"displayName",
+		"type_value":"java.lang.String"
+	},
+	{"jira_name_key":"customfield_13537",
+		"datorama_name_key":"theme",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"index_value":"0",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_11400",
+		"datorama_name_key":"apiConnector",
+		"method_name_value":"toString",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_13901",
+		"datorama_name_key":"testAutomationStatus",
+		"method_name_value":"toString",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_13557",
+		"datorama_name_key":"communicatedOnTickets",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+	},
+		{"jira_name_key":"customfield_14600",
+		"datorama_name_key":"marketPlaceApplications",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+	},
+	{"jira_name_key":"customfield_14000",
+		"datorama_name_key":"productFeatureRequestStatus",
+		"method_name_value":"toString",
+		"type_value":"java.lang.String"
+
+	},
+	{"jira_name_key":"customfield_13563",
+		"datorama_name_key":"xraySeverity",
+		"class_name_value":"net.rcarz.jiraclient.CustomFieldOption",
+		"method_name_value":"getValue",
+		"type_value":"java.lang.String"
+
+	}
+
+	]
+
+}

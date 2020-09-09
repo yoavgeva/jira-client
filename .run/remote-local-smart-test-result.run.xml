@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="remote-local-smart-test-result" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="org.springframework.boot.devtools.RemoteSpringApplication" />
+    <module name="smart-test-result-server" />
+    <option name="PROGRAM_PARAMETERS" value="http://localhost:8080/api" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/smart-test-result/server" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

@@ -1,0 +1,47 @@
+{
+  "headers": [],
+  "fileType": "json",
+  "isGzip": true,
+  "serverErrorSleep": 1000,
+  "serverErrorTries": 3,
+  "userPassDetails": {
+    "loginUrl": "http://85.222.134.39:8080/login"
+  },
+  "dataDetails": {
+    "dataUrl": "http://85.222.134.39:8080/data"
+  },
+  "extendedProperties": [
+    {
+      "key": "jql",
+      "label": "Jira query language",
+      "type": "TEXTBOX",
+      "note": "",
+      "defaultValue": "project in (Datorama,dLite) and issuetype not in (Epic,\"Test Execution\",\"Test Plan\",\"Test Set\",\"Test Plan\",\"Test Set\") and (createdDate > '2020-05-28 16:00' or updatedDate > '2020-05-28 16:00')"
+    }
+  ],
+  "manualMappings": [
+    {
+      "dimension": [
+        {
+          "e": ""
+        }
+      ],
+      "measurements": [
+        {
+          "": ""
+        }
+      ],
+      "buckets": [
+        "GENERIC_BUCKET_Bucket",
+        "ADS",
+        "CONVERTION_TAG",
+        "SEARCH_KEYWORDS",
+        "CONVERTION_TAG_WITH_KEYWORDS",
+        "WEB_ANALYTICS",
+        "WEB_ANALYTICS_EVENT",
+        "WEB_ANALYTICS_TAG",
+        "WEB_ANALYTICS_PAGES"
+      ]
+    }
+  ]
+}
