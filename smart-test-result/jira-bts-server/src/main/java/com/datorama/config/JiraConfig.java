@@ -42,6 +42,7 @@ public class JiraConfig {
   @Bean
   IssueType bug(@Autowired JiraClient client) throws JiraException {
     List<IssueType> issueTypesList = client.getIssueTypes();
+    logger.info("here");
 
     return issueTypesList.stream()
         .filter(it -> it.getName().equals("Bug"))
